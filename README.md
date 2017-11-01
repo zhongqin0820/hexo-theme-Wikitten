@@ -28,8 +28,8 @@
 
 ![改后：与pc端一致，左右分栏](http://owmwquuej.bkt.clouddn.com/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202017-09-27%2000.11.44.png)
 
-## <span id="jump">English Version Log</span>
-&emsp;&emsp;This is my update version of Wikitten.You can follow [the original theme's README file](./README_en.md) to install this theme.
+## English Version Log
+&emsp;&emsp;<span id="jump">This is my update</span> version of Wikitten.You can follow [the original theme's README file](./README_en.md) to install this theme.
 
 &emsp;&emsp;Main fix:
 1. fix the position of the search bar
