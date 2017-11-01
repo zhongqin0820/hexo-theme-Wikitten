@@ -10,44 +10,44 @@
 
 1. 将搜索框统一上置<br/>
 
-  1. 1  改前
+  1.1  改前
 
 ![搜索框改前](http://owmwquuej.bkt.clouddn.com/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202017-09-27%2000.05.35.png)
 
-    1. 2 改后
+  1.2 改后
 
 ![搜索框改后](http://owmwquuej.bkt.clouddn.com/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202017-09-27%2000.11.36.png)
 
 2. 将上下篇文章的导航修改成与pc端一致
 
-  2. 1 改前：上下分栏
+  2.1 改前：上下分栏
 
 ![改前：上下分栏](http://owmwquuej.bkt.clouddn.com/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202017-09-27%2000.05.51.png)
 
-    2. 2 改后：与pc端一致，左右分栏
+  2.2 改后：与pc端一致，左右分栏
 
 ![改后：与pc端一致，左右分栏](http://owmwquuej.bkt.clouddn.com/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202017-09-27%2000.11.44.png)
 
-## English Version Log
-&emsp;&emsp;This is my <span id = "jump">update</span> version of Wikitten.You can follow [the original theme's README file](./README_en.md) to install this theme.
+## <span id="jump">English Version Log</span>
+&emsp;&emsp;This is my update version of Wikitten.You can follow [the original theme's README file](./README_en.md) to install this theme.
 
 &emsp;&emsp;Main fix:
 1. fix the position of the search bar
 
-  1. 1 before
+  1.1 before
 
   ![fix bwfore](http://owmwquuej.bkt.clouddn.com/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202017-09-27%2000.05.35.png)
 
-  1. 2 after
+  1.2 after
 
   ![fix after](http://owmwquuej.bkt.clouddn.com/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202017-09-27%2000.11.36.png)
 
 2. fix the nav menu same as the pc
 
-  2. 1 before 
+  2.1 before
 
   ![fix before](http://owmwquuej.bkt.clouddn.com/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202017-09-27%2000.05.51.png)
 
-  2. 2 after
+  2.2 after
 
   ![fix after](http://owmwquuej.bkt.clouddn.com/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202017-09-27%2000.11.44.png)
