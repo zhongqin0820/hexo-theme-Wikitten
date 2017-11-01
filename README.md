@@ -1,159 +1,30 @@
-# hexo-theme-Wikitten
+# hexo-theme-Wikitten Update
+## 中文版Log
+&emsp;&emsp;[Go to English version log](#jump)
+&emsp;&emsp;这是我修改了一些样式之后的主题。可以参照[原主题的README文件进行安装](./README_zh-CN.md)。
+&emsp;&emsp;主要所做修改：
+因为个人需求关系，使用主题过程中，发现在移动端适配不是很好，因此修改了两处地方的样式。并且将header.js处对应标签删掉。
+1.将搜索框统一上置
+1.1 改前
+![搜索框改前](http://owmwquuej.bkt.clouddn.com/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202017-09-27%2000.05.35.png)
+1.2 改后
+![搜索框改后](http://owmwquuej.bkt.clouddn.com/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202017-09-27%2000.11.36.png)
+2.将上下篇文章的导航修改成与pc端一致
+2.1 改前：上下分栏
+![改前：上下分栏](http://owmwquuej.bkt.clouddn.com/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202017-09-27%2000.05.51.png)
+2.2 改后：与pc端一致，左右分栏
+![改后：与pc端一致，左右分栏](http://owmwquuej.bkt.clouddn.com/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202017-09-27%2000.11.44.png)
 
-[中文版文档](./README_zh-CN.md)
-
-### A personal wiki imitate [Wikitten](https://wikitten.vizuina.com/) style for Hexo. >[Preview](http://wiki.zthxxx.me/)
-
-![Site Preview](./source/images/SitePreview.png)
-
-Applicable to personal wiki knowledge management. Simple, double column, classified management. The knowledge of multi-level sorting, the side can be expand at all levels of classification, easy to jump.
-
-## Installation
-
-`hexo-theme-Wikitten` kernel code base on [icarus](https://github.com/ppoffice/hexo-theme-icarus), so you can read base function document with [icarus wiki](https://github.com/ppoffice/hexo-theme-icarus/wiki).
-
-### Install
-
-**Wikitten theme requires Hexo 3.0 or late.**
-
-```bash
-$ cd your-hexo-directory
-$ git clone https://github.com/zthxxx/hexo-theme-Wikitten.git themes/Wikitten
-$ cp -rf themes/Wikitten/_source/* source/
-$ cp -rf themes/Wikitten/_scaffolds/* scaffolds/
-$ cp -f themes/Wikitten/_config.yml.example themes/Wikitten/_config.yml
-# Last command will creat theme config form example, but remember to change personal info.
-```
-
-**Plugins requires in theme `package.json` and you need install these.**
-
-```json
-"hexo-autonofollow": "^1.0.1"	// open external links in new tab
-"hexo-directory-category": "^1.0.3" // Add categories according to the article file directory
-"hexo-generator-feed": "^1.2.0"	// generate Atom 1.0 or RSS 2.0 feed
-"hexo-generator-json-content": "^3.0.1"	// generate a JSON content file for site search
-"hexo-generator-sitemap": "^1.1.2"	// generate sitemap
-"hexo-math": "^3.0.2"	// render LaTex formula
-```
-
-You can merge these plugins into the **site's** `package.json` file by `npm install ` command install them once,
-
-Or in the **site folder**, you can install them with the following command:
-
-```bash
-$ npm install --save hexo-autonofollow
-$ npm install --save hexo-directory-category
-$ npm install --save hexo-generator-feed
-$ npm install --save hexo-generator-json-content
-$ npm install --save hexo-generator-sitemap
-$ npm install --save hexo-math
-```
-
-### Enable
-
-Modify `theme` setting in site config file `_config.yml` to **`Wikitten`**.
-
-### Update
-
-```bash
-$ cd themes/Wikitten
-$ git pull origin master
-```
-
-
-
-## Configuration
-
-In site config file `_config.yml`, **recommend settings**:
-
-```yaml
-# Hexo Configuration
-# URL
-permalink: wiki/:title/
-
-# Directory
-skip_render:
-  - README.md
-  - '_posts/**/embed_page/**'
-
-# Writing
-new_post_name: :title.md # File name of new posts
-
-## Markdown
-## https://github.com/hexojs/hexo-renderer-marked
-marked:
-  gfm: true
-  
-## Plugins: https://hexo.io/plugins/
-### JsonContent
-jsonContent:
-  meta: false
-  pages:
-    title: true
-    date: true
-    path: true
-    text: true
-  posts:
-    title: true
-    date: true
-    path: true
-    text: true
-    tags: true
-    categories: true
-  ignore:
-    - 404.html
-    
-### Creat sitemap
-sitemap:
-  path: sitemap.xml
-
-### Adds nofollow attribute to all external links in your hexo blog posts automatically.
-nofollow:
-  enable: true
-  exclude:
-    - <your site url domain> # eg: zthxxx.me
-```
-
-In **theme** config file `Wikitten/_config.yml`, you can read more detailed commentary for some options.
-
-**Before the start, plase first change my personal info to yourself, including options that `profile` `social_links` `history_control` and so on.**
-
-### `profile`, `comment`, `Share` and `miscellaneous` are **DEFAULT DISABLE**! 
-
-(You still can enable them, but not recommend.)
-
-other **recommend settings**:
-
-```yaml
-# Customize
-customize: # modify this information for yourself
-    sidebar: left # sidebar position, options: left, right
-    category_perExpand: false # enable article categories list per expanding
-    default_index_file: index.md # if this, it will display at site index instead of default index page
-    
-# Widgets
-widgets: # default use category only
-    - category
-    # - recent_posts
-    # - archive
-    # - tag
-    # - tagcloud
-    # - links
-    
-# History version 
-history_control: # make you wiki has history version control in page (view source code, edit online, compare historical changes)
-    enable: true
-    server_link: https://github.com # recommend use GitHub https://github.com
-    user: <your GitHub name>
-    repertory: <your repertory name of this wiki source code>
-    branch: <branch name of this wiki site source code>
-```
-
-
-
-## License
-
-[MIT LICENSE](./LICENSE)
-
-
-
+## <span id="jump">English Version Log</span>
+&emsp;&emsp;This is my update version of Wikitten.You can follow [the original theme's README file](./README_en.md) to install this theme.
+&emsp;&emsp;Main fix:
+1. fix the position of the search bar
+  1.1 before
+  ![fix bwfore](http://owmwquuej.bkt.clouddn.com/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202017-09-27%2000.05.35.png)
+  1.2 after
+  ![fix after](http://owmwquuej.bkt.clouddn.com/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202017-09-27%2000.11.36.png)
+2. fix the nav menu same as the pc
+  2.1 before 
+  ![fix before](http://owmwquuej.bkt.clouddn.com/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202017-09-27%2000.05.51.png)
+  2.2 after
+  ![fix after](http://owmwquuej.bkt.clouddn.com/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202017-09-27%2000.11.44.png)
